@@ -1,0 +1,19 @@
+﻿services:
+  roadnetworkdb:
+    container_name: roadnetworkdb
+    build:
+      context: .
+      dockerfile: ./db/Dockerfile
+    environment:
+      POSTGRES_DB: RoadNetworkDb
+      POSTGRES_USER: guest
+      POSTGRES_PASSWORD: guest123
+    ports:
+      - "5432:5432"
+    volumes:
+      - roadnetworkdb_data:/var/lib/postgresql/data
+      - ./init:/docker-entrypoint-initdb.d
+      - ./osm:/osm
+
+volumes:
+  roadnetworkdb_data:

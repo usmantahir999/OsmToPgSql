@@ -1,0 +1,15 @@
+# version: '3.4'
+
+# services:
+#   roadnetworkdb:
+#     container_name: roadnetworkdb
+#     environment:
+#       - POSTGRES_USER=guest
+#       - POSTGRES_PASSWORD=guest
+#       - POSTGRES_DB=RoadNetworkDb
+#     ports:
+#       - "5432:5432"
+#     volumes:
+#       - postgres_roadnetworkdb:/var/lib/postgresql/data/
+#       - ./osm:/osm
+#     restart: always
