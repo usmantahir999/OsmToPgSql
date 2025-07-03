@@ -21,11 +21,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "init", "init", "{9845FBB2-B
 		init\import_osm.sh = init\import_osm.sh
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "db", "db", "{34AD3071-DEE6-42C3-82D3-5C4009A9342A}"
-	ProjectSection(SolutionItems) = preProject
-		db\Dockerfile = db\Dockerfile
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,7 +44,6 @@ Global
 		{D996DD35-651B-4200-B981-F307BD9DD593} = {6A2CCE97-6646-47F2-8C35-762F9AF4E43D}
 		{0BB44529-3EAC-4DA7-BA9B-4006C2FD776C} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{9845FBB2-B2BB-4456-A8D2-384D44878C4D} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
-		{34AD3071-DEE6-42C3-82D3-5C4009A9342A} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {04B3208A-4370-4963-B422-7531DFE844B3}
