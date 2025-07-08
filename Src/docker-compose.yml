@@ -1,4 +1,4 @@
-﻿services:
+services:
   roadnetworkdb:
     container_name: roadnetworkdb
     build:
@@ -15,5 +15,12 @@
       - ./init:/docker-entrypoint-initdb.d
       - ./osm:/osm
 
+  roadnetwork.api:
+    image: ${DOCKER_REGISTRY-}api
+    build:
+      context: .
+      dockerfile: Presentation/Api/Dockerfile
+
 volumes:
   roadnetworkdb_data:
+
