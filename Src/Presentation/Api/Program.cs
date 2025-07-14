@@ -1,5 +1,5 @@
 var builder = WebApplication.CreateBuilder(args);
-
+builder.Host.UseSerilog((context, config) => config.ReadFrom.Configuration(context.Configuration));
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -7,6 +7,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddApplication();
+builder.Services.AddInfrastructure(builder.Configuration);
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -16,6 +18,7 @@ var app = builder.Build();
     app.UseSwaggerUI();
 }
 
+app.UseMiddleware<ErrorHandlingMiddleware>();
 app.UseHttpsRedirection();
 
 app.UseAuthorization();

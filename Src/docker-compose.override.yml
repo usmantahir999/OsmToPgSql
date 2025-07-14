@@ -1,12 +1,12 @@
 
-services:
-  roadnetwork.api:
-    container_name: "roadnetwork.api"
-    environment:
-      - ASPNETCORE_ENVIRONMENT=Development
-      - ASPNETCORE_HTTP_PORTS=8080,
-      - ConnectionStrings:Database=Server=roadnetworkdb;Port=5432;Database=RoadNetworkDb;User Id=guest;Password=guest123;Include Error Detail=true
-    ports:
-      - "8000:80" #8000 is local port no
-    depends_on:
-      - roadnetworkdb
+# services:
+#   roadnetwork.api:
+#     container_name: "roadnetwork.api"
+#     environment:
+#       - ASPNETCORE_ENVIRONMENT=Development
+#       - ASPNETCORE_HTTP_PORTS=8080,
+#       - ConnectionStrings:Database=Server=roadnetworkdb;Port=5432;Database=RoadNetworkDb;User Id=guest;Password=guest123;Include Error Detail=true
+#     ports:
+#       - "8000:80" #8000 is local port no
+#     depends_on:
+#       - roadnetworkdb

@@ -1,0 +1,10 @@
+﻿global using Microsoft.Extensions.Configuration;
+global using Microsoft.Extensions.DependencyInjection;
+global using Npgsql;
+global using RoadNetworkService.Application.Interfaces;
+global using RoadNetworkService.Infrastructure.Persistence.Connections;
+global using RoadNetworkService.Infrastructure.Persistence.Interfaces;
+global using RoadNetworkService.Infrastructure.Persistence.Repositories;
+global using RoadNetworkService.Application.Dtos;
+global using RoadNetworkService.Application.Features.Queries.GetEdgeConnectingNodes;
+global using RoadNetworkService.Application.Features.Queries.GetGraphByBoundingBox;

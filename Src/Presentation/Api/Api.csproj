@@ -1,8 +1,8 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
-    <Nullable>enable</Nullable>
+    <Nullable>disable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>18a4e901-3e18-40e5-9964-57820324d96d</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
@@ -12,9 +12,12 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
-    <PackageReference Include="Npgsql" Version="8.0.4" />
-    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.4" />
+    <PackageReference Include="Serilog.AspNetCore" Version="8.0.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Infrastructure\RoadNetworkService.Infrastructure\RoadNetworkService.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
