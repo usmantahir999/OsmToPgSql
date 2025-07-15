@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-namespace Api.Controllers
+﻿namespace RoadNetworkService.Api.Controllers
 {
     public class RoadNetworkController : BaseApiController
     {

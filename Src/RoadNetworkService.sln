@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{02EA681E-C7D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{6A2CCE97-6646-47F2-8C35-762F9AF4E43D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api", "Presentation\Api\Api.csproj", "{D996DD35-651B-4200-B981-F307BD9DD593}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoadNetworkService.Api", "Presentation\RoadNetworkService.Api\RoadNetworkService.Api.csproj", "{D996DD35-651B-4200-B981-F307BD9DD593}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{81DDED9D-158B-E303-5F62-77A2896D2A5A}"
 EndProject

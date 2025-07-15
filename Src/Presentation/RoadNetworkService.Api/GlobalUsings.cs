@@ -1,7 +1,7 @@
 ﻿global using Serilog;
 global using System.Net;
 global using System.Text.Json;
-global using Api.Middlewares;
+global using RoadNetworkService.Api.Middlewares;
 global using Microsoft.AspNetCore.Mvc;
 global using RoadNetworkService.Application.Exceptions;
 global using RoadNetworkService.Application.Wrappers;

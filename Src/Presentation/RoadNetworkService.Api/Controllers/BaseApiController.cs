@@ -1,5 +1,5 @@
 ﻿using MediatR;
-namespace Api.Controllers
+namespace RoadNetworkService.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

@@ -1,4 +1,4 @@
-﻿namespace Api.Middlewares
+﻿namespace RoadNetworkService.Api.Middlewares
 {
     public class ErrorHandlingMiddleware
     {
